@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  background: #f5f5f5;
 }
 
 body {
@@ -15,7 +20,19 @@ div {
 
 div li {
   display: flex;
+  flex: 1;
+  min-width: 600px;
   align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+div ul {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 div li + li {
@@ -36,4 +53,59 @@ button {
 div li button {
   margin: 0 15px;
   background: #ca4949;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.inputGroup label {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+form div {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+form input {
+  height: 20px;
+  border-color: #7159c1;
+}
+
+form {
+  margin: 20px auto;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.repository-info {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.repository-info h3 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.repository-info span {
+  font-size: 13px;
+}
+
+.repository-info a {
+  font-size: 13px;
+  text-decoration: none;
+  margin: 5px 0;
 }
